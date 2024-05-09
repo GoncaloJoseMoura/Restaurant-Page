@@ -1,0 +1,105 @@
+.contacts {
+
+    .bg-info {
+      margin: 0px;
+      background-image: url("../assets/background/home.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      padding: 15vh 20vw;
+      height: min(83vh, auto);
+
+      .contacts-info {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        background-color: white;
+        padding: 5vh 5vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        div {
+          width: 90%;
+
+          p {
+            font-size: 1.3rem;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;        
+          }
+        }
+
+        h3 {
+          margin-top: 0px;
+          font-family: 'MyFont';
+          font-size: 3rem;
+          text-decoration: underline;
+          text-underline-offset: 20px;
+          text-decoration-color: var(--dark-blue);
+          
+        }
+
+
+        form {
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 70%;
+            list-style: none;
+            padding-left: 0px;
+
+            li {
+              display: flex;
+              flex: 1 1 auto;
+              flex-direction: column;
+              gap: 5px;
+
+              label {
+                font-size: 1.2rem;
+              }
+  
+              input, textarea {
+                font-family: "Helvetica", "Arial", sans-serif;
+                font-size: 1rem;
+                border: 1px solid #D6D9DC;
+                border-radius: 4px;
+                padding: 5px 10px;
+                resize: none;
+                margin-bottom: 5px;
+              }
+
+              input:hover, textarea:hover {
+                  box-shadow: 2px 2px 5px #dddddf;
+              }
+
+              input:focus, textarea:focus {
+                  border: 1px solid var(--dark-blue);
+                  box-shadow: 2px 2px 5px #dddddf;
+                  outline: none;
+              }
+
+              input::placeholder, textarea::placeholder {
+                  color: #c6c9cd;
+                  font-size: 0.95rem;
+              }
+
+            } 
+          }
+
+          button {
+            cursor: pointer;
+            border: none;
+            background-color: #2ec4b6;
+            font-weight: 700;
+            font-size: 1rem;
+            color: white;
+            width: 25%;
+            padding: 8px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }

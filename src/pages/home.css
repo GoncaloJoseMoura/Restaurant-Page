@@ -1,0 +1,44 @@
+.home {
+  height: 83vh;
+  margin: 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/background/home.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  .bg-home {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 20%;
+
+
+    h1 {  
+      font-family: 'MyFont';
+      font-size: 4rem;
+      text-align: center;
+      color: white;
+      margin: 25px 0px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+      color: white;
+    }
+
+
+    button {
+      cursor: pointer;
+      border: 2px solid var(--dark-blue);
+      background-color: #2ec4b6;
+      font-weight: 700;
+      font-size: 1rem;
+      color: white;
+      padding: 8px 25px;
+      border-radius: 10px;
+    }
+  }
+
+}
