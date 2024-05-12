@@ -36,6 +36,7 @@ function menu() {
 
         const img = document.createElement('img')
         img.src = value.image
+        img.loading = "lazy"
 
         const card_div = document.createElement('div')
 

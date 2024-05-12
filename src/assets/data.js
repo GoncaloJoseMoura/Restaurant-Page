@@ -8,55 +8,23 @@ import chocolate_tart from "./food/chocolate_tart.jpg";
 import chocolate_hazelnut from "./food/chocolate_hazelnut_.jpg";
 
 
+function cardLoader(title, price, image, ingredients) {
+    this.title = title;
+    this.price = price;
+    this.image = image;
+    this.ingredients = ingredients;
+}
+
+
 const data = [
-    {
-"title": "Banoffie Pie",
-"price": "4,9€",
-"image": banoffie_pie,
-"ingredients": "Handmade doughnut filled with a homemade banana cream..."
-    },
-    {
-"title": "Dulce de Leche",
-"price": "4,9€",
-"image": carob,
-"ingredients": "Handmade doughnut filled with a homemade banana cream..."
-    },
-    {
-"title": "Raspberry",
-"price": "6€",
-"image": raspberry,
-"ingredients": "Handmade doughnut filled with a homemade banana cream..."
-    },
-    {
-"title": "Pistachio",
-"price": "6€",
-"image": pistachio_scoop,
-"ingredients": "Handmade doughnut filled with a homemade banana cream..."
-    },
-    {
-"title": "Panna Cotta",
-"price": "4,9€",
-"image": panna_cotta,
-"ingredients": "Handmade doughnut filled with a homemade banana cream..."
-    },
-    {
-"title": "Lemon Poppyseed",
-"price": "4,9€",
-"image": lemon_poppyseed,
-"ingredients": "Handmade doughnut filled with a homemade banana cream..."
-    },
-    {
-"title": "Chocolate Tart",
-"price": "4,9€",
-"image": chocolate_tart,
-"ingredients": "Handmade doughnut filled with a homemade banana cream..."
-    },
-    {
-"title": "Chocolate Hazelnut",
-"price": "5,9€",
-"image": chocolate_hazelnut,
-"ingredients": "Handmade doughnut filled with a homemade banana cream..."
-    }
+new cardLoader("Banoffie Pie", "4,9€", banoffie_pie, "Handmade doughnut filled with a homemade banana cream..."),
+new cardLoader("Dulce de Leche", "4,9€",carob, "Handmade doughnut filled with a homemade banana cream..."),
+new cardLoader("Raspberry", "6.9€",raspberry, "Handmade doughnut filled with a homemade banana cream..."),
+new cardLoader("Pistachio", "6.9€", pistachio_scoop, "Handmade doughnut filled with a homemade banana cream..."),
+new cardLoader("Panna Cotta", "4,9€", panna_cotta, "Handmade doughnut filled with a homemade banana cream..."),
+new cardLoader("Lemon Poppyseed", "4,9€",lemon_poppyseed, "Handmade doughnut filled with a homemade banana cream..."),
+new cardLoader("Chocolate Tart", "4.9€", chocolate_tart, "Handmade doughnut filled with a homemade banana cream..."),
+new cardLoader("Chocolate Hazelnut", "5.9€", chocolate_hazelnut, "Handmade doughnut filled with a homemade banana cream...")
 ]
 
 export default data

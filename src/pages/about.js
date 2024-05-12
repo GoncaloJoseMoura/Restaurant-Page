@@ -90,8 +90,9 @@ function about() {
     </div>
 
     `
-
-    div.querySelector('.about-info img').src = AboutPic
+    const about_img = div.querySelector('.about-info img')
+    about_img.src = AboutPic
+    about_img.loading = "lazy"
 
     const logos = [healthLogo, CowLogo, TreeLogo, CommunityLogo]
 
@@ -101,6 +102,7 @@ function about() {
 
     div.querySelectorAll('.card img').forEach((value) => {
         value.src = Journalist
+        value.loading = "lazy"
     })
 
     return div
